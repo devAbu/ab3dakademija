@@ -1,30 +1,173 @@
 
-		.navbar{
-			background-color: #032d40!important;
+html, body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+}
+
+body {
+		font-family: "Helvetica Neue",sans-serif;
+		font-weight: lighter;
+}
+
+.jumbotron {
+	background-image: url('https://ak4.picdn.net/shutterstock/videos/13746134/thumb/9.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 85vh;
+  padding-bottom: 0
+
+}
+
+.content {
+		width: 94%;
+		margin: 4em auto;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: justify;
+		z-index: 7;
+}
+
+.logo {
+		line-height: 60px;
+		position: fixed;
+		float: left;
+		margin: 16px 46px;
+		color: #fff;
+		font-weight: bold;
+		font-size: 20px;
+		letter-spacing: 2px;
+		cursor: pointer;
+		padding-left: 70px;
+
+}
+
+nav {
+		position: fixed;
+		width: 100%;
+		line-height: 60px;
+		z-index: 7;
+
+}
+
+nav ul {
+		line-height: 60px;
+		list-style: none;
+		background: rgba(0, 0, 0, 0);
+		overflow: hidden;
+		color: #fff;
+		padding: 0;
+		text-align: right;
+		margin: 0;
+		padding-right: 40px;
+		transition: 2s;
+}
+
+nav.black ul {
+		background: #6d828f;
+}
+
+nav ul li {
+		display: inline-block;
+		padding: 16px 40px;;
+}
+
+nav ul li a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 16px;
+cursor: pointer;
+ text-decoration: none;
+  max-width: 250px;
+  padding: 1rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image:
+    linear-gradient(
+      to bottom,
+      red,
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+
+}
+nav ul li a:hover {
+	text-decoration: none;
+	font-size:30px;
+  transition: all 500ms;
+  font-size-adjust: 20px;
+	   color:#b5984e;
+}
+.menu-icon {
+		line-height: 60px;
+		width: 100%;
+		background: #000;
+		text-align: right;
+		box-sizing: border-box;
+		padding: 15px 24px;
+		cursor: pointer;
+		color: #fff;
+		display: none;
+}
+
+@media(max-width: 786px) {
+
+		.logo {
+					position: fixed;
+					top: 0;
+					margin-top: 16px;
 		}
 
-		.navbar-nav{
-			margin-top: 4%;
+		nav ul {
+					max-height: 0px;
+					background:  #6d828f;
 		}
-		.navbar-brand{
-			padding-top: 3%;
-			padding-left: 10%;
-		}
-		.navbar-brand img{
-			width: 75%;
-		}
-		.nav-item{
-			/*padding: 0 20px;*/
-			padding: 0 20px;
-		}
-		.nav-item .vazno{
-			background-color: #1197d2;
-			font-weight: bold;
-			width:200px;
 
-			border-radius: 20px;
-			text-align: center;
+		nav.black ul {
+					background:  #6d828f;
 		}
+
+		.showing {
+					max-height: 34em;
+		}
+
+		nav ul li {
+					box-sizing: border-box;
+					width: 100%;
+					padding: 24px;
+					text-align: center;
+		}
+
+		.menu-icon {
+					display: block;
+		}
+
+}
+video{
+	padding-left: 100px;
+	padding: 0;
+	margin: 0;
+	top: -40px;
+   left: -10px;
+}
+#muha{
+	padding-top: 140px;
+	padding-left: 100px;
+
+
+}
+
+#Onama{
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+#StaNudimo{
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 		button.vazno{
 			background-color: #1197d2;
 			border-radius: 50px;
@@ -36,6 +179,22 @@
 			padding: 6px 20px
 			font-size: large;
 			font-weight: bold;
+			cursor: pointer;
+
+		}
+		button.vazno2{
+			background-color: #1197d2;
+			border-radius: 50px;
+			width: 250px;
+			height: 60px;
+			text-align: center;
+			color: white;
+			border: none;
+			padding: 6px 20px
+			font-size: large;
+			font-weight: bold;
+			cursor: pointer;
+
 		}
 		.nav-item a{
 			color: white!important;
@@ -139,7 +298,7 @@
 			width: 85%;
 			border-radius: 10%;
 		}
-		
+
 		.sta2 p,h3{
 			text-align: center;
 			color: #707070;
@@ -309,11 +468,3 @@
 			}
 
 		}
-
-
-
-
-
-
-
-

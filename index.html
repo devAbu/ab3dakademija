@@ -7,33 +7,76 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark">
-	  <a class="navbar-brand" href="#">
-		<img src="img/logo.png">
-	  </a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon "></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-		  <ul class="nav navbar-nav ml-auto">
-			  <li class="nav-item active">
-				<a class="nav-link" href="#Onama">O nama</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#StaNudimo">Sta nudimo?</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Kontakt</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link vazno " data-toggle="modal" data-target="#sastanakModal" href="#">ZAKAŽITE SASTANAK</a>
-			  </li>
-			</ul>
-	  </div>
-	</nav>
-	<div class="header container-fluid">
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+													<img  src="img/logo.png">
+
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="#Onama">O nama</a></li>
+                                    <li><a href="#StaNudimo">Šta nudimo?</a></li>
+                                    <li><a href="#">Kontakt</a></li>
+																		<button class="vazno2" data-toggle="modal" data-target="#sastanakModal">ZAKAŽITE SASTANAK</button>
+                              </ul>
+                        </div>
+                  </nav>
+									<script type="text/javascript">
+
+								      // Menu-toggle button
+
+								      $(document).ready(function() {
+								            $(".menu-icon").on("click", function() {
+								                  $("nav ul").toggleClass("showing");
+								            });
+								      });
+
+								      // Scrolling Effect
+
+								      $(window).on("scroll", function() {
+								            if($(window).scrollTop()) {
+								                  $('nav').addClass('black');
+								            }
+
+								            else {
+								                  $('nav').removeClass('black');
+								            }
+								      })
+
+
+								      </script>
+            </header>
+
+						<section id="jumbotron" class="jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center">
+	 <div class="container text-center">
+		 <h1 class="display-1 text-white text-uppercase">ab3dakademija</h1>
+
+		 <p class=" text-white h5 mb-3 ml-4">Posjetite nas:</p>
+		 <a href="https://www.instagram.com/" target="_blank" class="btn btn-lg btn-primary mb-1 ml-lg-5 ml-3">
+			 <i class="fab fa-instagram mr-2" aria-hidden="true"></i>Instagram</a>
+		 <a href="https://www.facebook.com" target="_blank" class="btn btn-lg btn-primary mb-1 ml-3">
+			 <i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</a>
+
+	 </div>
+ </section>
+	<div class="header container-fluid" id="muha">
 		<div class="row">
 			<div class="col-md-5 col-12">
 				<h1>Podignite edukaciju na visi nivo sa 3D</h1>
@@ -70,7 +113,7 @@
 				<textarea name="poruka" id="prouka" cols="60" rows="7" class="form-control mb-2" style="resize:none"></textarea>
 				<input type="submit" value="Submit" class="btn btn-outline-success">
 
-	        </form>	    
+	        </form>
 	       </div>
 	    </div>
 	  </div>
@@ -83,9 +126,12 @@
 				<p>AB3D Labs je švicarska kompanija sa predstavništvom u Bosni i Hercegovini. Kreirali smo inovativan 3D design softver za učenje 3D dizajna i 3D printanja kao i STEM baziran 3D kurikulum koji je prilagođen za učenike osnovnoškolskog i srednjoškolskog uzrasta</p>
 				<br><br><a href="">PGLEDAJTE VIDEO</a>
 			</div>
-			<div class="col-md-6 col-12 miVid">
-				<img src="img/video-img.png">
-			</div>
+
+	<video  width="520" height="260" controls>
+	  <source src="video/video.mp4" type="video/mp4">
+	  Your browser does not support the video tag.
+	</video>
+
 		</div>
 	</div>
 	<div class="container">
