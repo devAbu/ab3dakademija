@@ -13,15 +13,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-		<script src="./toastr.js"></script>
-		 <link rel="stylesheet" href="./toastr.css">
-
-
 </head>
-
-
-
 <body>
       <div class="wrapper">
             <header>
@@ -101,66 +93,24 @@
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">AB3D Akademija</h5>
+	        <h5 class="modal-title" id="exampleModalLabel">Zakažite Sastanak</h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>
 	      <div class="modal-body">
+	        <form>
+	        	Ime i Prezime:<br>
+				<input type="text" name="name" required="true" class="form-control mb-2">
+				Kompanija:<br>
+				<input type="text" name="kompanija" class="form-control mb-2">
+				Kontakt broj:<br>
+				<input type="tel" name="telefon" placeholder="" required="true" class="form-control mb-2">
+				Vaša poruka:<br>
+				<textarea name="poruka" id="prouka" cols="60" rows="7" class="form-control mb-2" style="resize:none"></textarea>
+				<input type="submit" value="Submit" class="btn btn-outline-success">
 
-
-
-
-
-
-
-						<!-- Anesova Forma -->
-
-
-
-
-						<form>
-	        <h1 class="upitTekst">Zakažite Sastanak</h1>
-
-	        <hr class="sep" />
-	        <div class="group">
-	          <input type="text" required="required" id="fullName" /><span class="highlight"></span><span class="bar"></span>
-	          <label>Ime i Prezime</label>
-	        </div>
-	        <div class="group">
-	          <input type="email" required="required" id="email" /><span class="highlight"></span><span class="bar"></span>
-	          <label>E-mail</label>
-	        </div>
-	        <!-- <div class="group">
-	          <input type="password" required="required" /><span class="highlight"></span><span class="bar"></span>
-	          <label>Password</label>
-	        </div> -->
-
-	        <div class="group">
-	          <textarea type="textarea" rows="5" required="required" id="message"></textarea><span
-	            class="highlight"></span><span class="bar"></span>
-	          <label>Poruka</label>
-	        </div>
-	        <div class="btn-box">
-	          <button class="btn btn-submit" type="button" id="button">Pošalji</button>
-	          <button class="btn btn-cancel" type="reset">Poništi</button>
-
-	        </div>
-	      </form>
-
-
-	<!-- Anesova Forma -->
-
-
-
-
-
-
-
-
-
-
-
+	        </form>
 	       </div>
 	    </div>
 	  </div>
@@ -287,161 +237,27 @@
 		</div>
 	</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Footer by Soki -->
-
-<footer class="ct-footer">
-      <div class="container">
-        <div  name="contentForm" enctype="multipart/form-data" method="post" action="">
-          <div class="ct-footer-pre  ">
-            <div class="inner">
-							<!--Kad sam ubacio css od forme, ovo se sjebalo -->
-              <span class="row text-center">Nudimo unapređenje edukacijskog procesa u školama! </span>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-        <div class="ct-footer-meta text-center-sm">
-          <div class="row">
-            <div class="col-sm-12 col-12 col-md-2">
-              <img class="d-block mx-auto mx-md-0" alt="logo" src="img/logo.png" style="margin-top:-10px;" height="80" width="150">
-            </div>
-            <div class="col-sm-12 col-12 col-md-4">
-              <address>
-                <span  style="font-size: 20px;">AB3D Labs<br></span>Bulevar Meše Selimovića<br>
-                Sarajevo, BiH, 71000<br>
-                <span>Telefon: <a href="tel:+38762123321">+387 61 338 555</a></span>
-              </address>
-            </div>
-            <div class="col-sm-12-center col-md-2 ct-u-paddingTop10">
-              <a href="https://goo.gl/maps/38oc3DoVaW22" target="_blank"><img class="d-block mx-auto mx-md-0" alt="app store" src="img/maps.png" height="60" width="60"></a>
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-              <ul class="ct-socials list-unstyled">
-                <div class="row">
-                <!--  <div class="col-md-4 col-3 mr-sm-3 mr-md-0 offset-1 offset-sm-0">-->
-								<div class="col-md-6 col-6 center ">
-
-                    <li class="list-inline-item ">
-
-                      <a href="https://www.facebook.com/ab3dskola/" target="_blank"><img   alt="facebook" src="https://www.solodev.com/assets/footer/facebook-white.png"></a>
-
-                    </li>
-                  </div>
-                  <!--<div class="col-md-4 col-3 mr-sm-3 mr-md-0 ">
-                    <li class="list-inline-item">
-                      <a href="https://www.facebook.com/" target="_blank"><img alt="linkedin" id="linkedinImg" src="images/linkedin-white.png" style="margin-top: -5px;" width=52 height=52></a>
-                    </li>
-                  </div>
-								-->
-                  <div class="col-md-6 col-6  ">
-                    <li class="list-inline-item">
-
-                      <a href="https://www.instagram.com/ab3d_akademija/?hl=en" target="_blank"><img  alt="instagram" src="https://www.solodev.com/assets/footer/instagram-white.png"></a>
-
-                    </li>
-                  </div>
-
-                </div>
-                <!--
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/" target="_blank"><img alt="facebook" src="https://www.solodev.com/assets/footer/facebook-white.png"></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/?lang=en" target="_blank"><img alt="twitter" src="https://www.solodev.com/assets/footer/twitter-white.png"></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.youtube.com/" target="_blank"><img alt="youtube" src="https://www.solodev.com/assets/footer/youtube-white.png"></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.instagram.com/?hl=en" target="_blank"><img alt="instagram" src="https://www.solodev.com/assets/footer/instagram-white.png"></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.pinterest.com/" target="_blank"><img alt="pinterest" src="https://www.solodev.com/assets/footer/pinterest-white.png"></a>
-                </li>-->
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ct-footer-post">
-        <div class="container">
-
-          <div class="row justify-content-center">
-            <p>Copyright © 2019 AB3D Labs.&nbsp;<a href="#">Privacy Policy</a></p>
-
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Footer by Soki -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<div class="foter1">
+		<footer>
+		<p class="foterp ">Zainteresirani?</p>
+		<button class="foterbutton" data-toggle="modal" data-target="#sastanakModal">ZAKAŽITE SASTANAK</button>
+	</footer>
+	</div>
+
+	<div class="foter2">
+		<footer>
+			<h6>Kontakt:</h6>
+			<div class="foter2text">
+				<p>ab3dlabsbih@gmail.com <br>	+387 61 338 555</p>
+			</div>
+		</footer>
+	</div>
+
+	<div class="foter3">
+		<footer>
+			<p>AB3D Labs, 2019.</p>
+		</footer>
+	</div>
 
 
 
@@ -450,7 +266,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script type="application/javascript" src="js/scrolling.js"></script>
- <script src="./js/validacija.js"></script>
 
 </body>
 </html>
