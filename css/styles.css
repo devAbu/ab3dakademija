@@ -10,16 +10,38 @@ body {
 		font-weight: lighter;
 }
 
-.jumbotron {
-	background-image: url('https://ak4.picdn.net/shutterstock/videos/13746134/thumb/9.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 85vh;
-  padding-bottom: 0
+#muha3 {
+	display:block;
+	margin:0 auto;
 
 }
+#face{
+	width: 140px;
+	border-radius: 13px;
+	height: 60px;
+}
+#inst{
+	height: 185px;
+	width: 160px;
+}
 
+.social-icons {
+  text-align: center;
+  }
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:70px;
+  height:70px;
+  margin-right: 20px;
+}
 .content {
 		width: 94%;
 		margin: 4em auto;
@@ -90,15 +112,20 @@ cursor: pointer;
       red,
       rgba(0, 0, 0, 0)
     ) 1 100%;
+		transition: all 500ms;
 
 }
 nav ul li a:hover {
 	text-decoration: none;
-	font-size:30px;
+	font-size:20px;
   transition: all 500ms;
   font-size-adjust: 20px;
-	   color:#b5984e;
+	   color:#d493db;
 }
+
+
+
+
 .menu-icon {
 		line-height: 60px;
 		width: 100%;
