@@ -1,123 +1,127 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>AB3D Labs</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-		<script src="./toastr.js"></script>
-		 <link rel="stylesheet" href="./toastr.css">
-<<<<<<< HEAD
-		 <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
-=======
->>>>>>> parent of ae66124... Revert "Forma sa validacijom - dodati php dio, footer - boje prilagoditi kad dodje vrijeme"
+	<script src="./toastr.js"></script>
+	<link rel="stylesheet" href="./toastr.css">
 
+	<link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
 
 </head>
 
 
 
 <body>
-      <div class="wrapper">
-            <header>
+	<div class="wrapper">
+		<header>
 
-                  <nav>
+			<nav>
 
-                        <div class="menu-icon">
-                              <i class="fa fa-bars fa-2x"></i>
-                        </div>
+				<div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
 
-                        <div class="logo">
-													<img  src="img/logo.png">
+				<div class="logo">
+					<img src="img/logo.png">
 
-                        </div>
+				</div>
 
-                        <div class="menu">
-                              <ul>
-                                    <li><a href="#Onama">O nama</a></li>
-                                    <li><a href="#StaNudimo">Šta nudimo?</a></li>
-                                    <li><a href="#">Kontakt</a></li>
-																		<button class="vazno2" data-toggle="modal" data-target="#sastanakModal">ZAKAŽITE SASTANAK</button>
-                              </ul>
-                        </div>
-                  </nav>
-									<script type="text/javascript">
+				<div class="menu">
+					<ul>
+						<li><a href="#Onama">O nama</a></li>
+						<li><a href="#StaNudimo">Šta nudimo?</a></li>
+						<li><a href="#">Kontakt</a></li>
+						<button class="vazno2" data-toggle="modal" data-target="#sastanakModal">ZAKAŽITE
+							SASTANAK</button>
+					</ul>
+				</div>
+			</nav>
+			<script type="text/javascript">
+				// Menu-toggle button
 
-								      // Menu-toggle button
+				$(document).ready(function () {
+					$(".menu-icon").on("click", function () {
+						$("nav ul").toggleClass("showing");
+					});
+				});
 
-								      $(document).ready(function() {
-								            $(".menu-icon").on("click", function() {
-								                  $("nav ul").toggleClass("showing");
-								            });
-								      });
+				// Scrolling Effect
 
-								      // Scrolling Effect
-
-								      $(window).on("scroll", function() {
-								            if($(window).scrollTop()) {
-								                  $('nav').addClass('black');
-								            }
-
-								            else {
-								                  $('nav').removeClass('black');
-								            }
-								      })
-
-
-								      </script>
-            </header>
+				$(window).on("scroll", function () {
+					if ($(window).scrollTop()) {
+						$('nav').addClass('black');
+					} else {
+						$('nav').removeClass('black');
+					}
+				})
+			</script>
+		</header>
 
 
 
-	<div class="header container-fluid" id="muha">
-		<div class="row">
-			<div class="col-md-5 col-12">
-				<h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Podignite edukaciju na visi nivo sa 3D</h1>
-				<p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Mi pomažemo školama i organizacijama da unaprijede edukacijiski proces kroz implementaciju 3D print i dizajn kurikuluma.</p>
-				<p>
-					<button data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" class="vazno" data-toggle="modal" data-target="#sastanakModal">ZAKAŽITE SASTANAK</button>
-				</p>
+		<div class="header container-fluid" id="muha">
+			<div class="row">
+				<div class="col-md-5 col-12">
+					<h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+						data-sal-easing="ease-out-bounce">Podignite edukaciju na visi nivo sa 3D</h1>
+					<p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+						data-sal-easing="ease-out-bounce">Mi pomažemo školama i organizacijama da unaprijede
+						edukacijiski proces kroz implementaciju 3D print i dizajn kurikuluma.</p>
+					<p>
+						<button data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+							data-sal-easing="ease-out-bounce" class="vazno" data-toggle="modal"
+							data-target="#sastanakModal">ZAKAŽITE SASTANAK</button>
+					</p>
+				</div>
+				<div class="col-md-7 col-12 bg-slika">
+					<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+						data-sal-easing="ease-out-bounce" src="img/bg-header.png">
+				</div>
 			</div>
-			<div class="col-md-7 col-12 bg-slika">
-				<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" src="img/bg-header.png">
-			 </div>
+
+			<ul class="social-icons">
+
+				<p class="novo">Posjetite nas:</p>
+
+
+				<li><a href="https://www.facebook.com/ab3dskola/"><img id="face" src='img\f.jpg' /></a></li>
+				<li><a href="https://www.instagram.com/ab3d_akademija/?hl=en"><img id="inst"
+							src='img\instagraml.png' /></a></li>
+			</ul>
+
 		</div>
 
-		<ul class="social-icons">
+		<!-- Modal -->
+		<div class="modal fade" id="sastanakModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
 
-			<p class="novo">Posjetite nas:</p>
+						<h5 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+							data-sal-easing="ease-out-bounce" class="modal-title" id="exampleModalLabel">AB3D Akademija
+						</h5>
 
-
-	    <li><a   href="https://www.facebook.com/ab3dskola/"><img id="face" src='img\f.jpg' /></a></li>
-	    <li><a href="https://www.instagram.com/ab3d_akademija/?hl=en"><img id="inst" src='img\instagraml.png' /></a></li>
-	</ul>
-
-	</div>
-
-	<!-- Modal -->
-	<div class="modal fade" id="sastanakModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-<<<<<<< HEAD
-	        <h5 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" class="modal-title" id="exampleModalLabel">AB3D Akademija</h5>
-=======
-	        <h5 class="modal-title" id="exampleModalLabel">AB3D Akademija</h5>
->>>>>>> parent of ae66124... Revert "Forma sa validacijom - dodati php dio, footer - boje prilagoditi kad dodje vrijeme"
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
+						<h5 class="modal-title" id="exampleModalLabel">AB3D Akademija</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
 
 
 
@@ -131,52 +135,47 @@
 
 
 						<form>
-<<<<<<< HEAD
-	        <h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" class="upitTekst">Zakažite Sastanak</h1>
-=======
-	        <h1 class="upitTekst">Zakažite Sastanak</h1>
->>>>>>> parent of ae66124... Revert "Forma sa validacijom - dodati php dio, footer - boje prilagoditi kad dodje vrijeme"
+							<h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce" class="upitTekst">Zakažite Sastanak</h1>
+							<h1 class="upitTekst">Zakažite Sastanak</h1>
 
-	        <hr class="sep" />
-	        <div class="group">
-	          <input type="text" required="required" id="fullName" /><span class="highlight"></span><span class="bar"></span>
-<<<<<<< HEAD
-	          <label >Ime i Prezime</label>
-=======
-	          <label>Ime i Prezime</label>
->>>>>>> parent of ae66124... Revert "Forma sa validacijom - dodati php dio, footer - boje prilagoditi kad dodje vrijeme"
-	        </div>
-	        <div class="group">
-	          <input type="email" required="required" id="email" /><span class="highlight"></span><span class="bar"></span>
-	          <label>E-mail</label>
-	        </div>
-	        <!-- <div class="group">
+							<hr class="sep" />
+							<div class="group">
+								<input type="text" required="required" id="fullName" /><span
+									class="highlight"></span><span class="bar"></span>
+								<label>Ime i Prezime</label>
+								<label>Ime i Prezime</label>
+							</div>
+							<div class="group">
+								<input type="email" required="required" id="email" /><span
+									class="highlight"></span><span class="bar"></span>
+								<label>E-mail</label>
+							</div>
+							<!-- <div class="group">
 	          <input type="password" required="required" /><span class="highlight"></span><span class="bar"></span>
 	          <label>Password</label>
 	        </div> -->
 
-	        <div class="group">
-	          <textarea type="textarea" rows="5" required="required" id="message"></textarea><span
-	            class="highlight"></span><span class="bar"></span>
-	          <label>Poruka</label>
-	        </div>
-	        <div class="btn-box">
-<<<<<<< HEAD
-	          <button data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" class="btn btn-submit" type="button" id="button">Pošalji</button>
-	          <button data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" class="btn btn-cancel" type="reset">Poništi</button>
-=======
-	          <button class="btn btn-submit" type="button" id="button">Pošalji</button>
-	          <button class="btn btn-cancel" type="reset">Poništi</button>
->>>>>>> parent of ae66124... Revert "Forma sa validacijom - dodati php dio, footer - boje prilagoditi kad dodje vrijeme"
+							<div class="group">
+								<textarea type="textarea" rows="5" required="required" id="message"></textarea><span
+									class="highlight"></span><span class="bar"></span>
+								<label>Poruka</label>
+							</div>
+							<div class="btn-box">
+								<button data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+									data-sal-easing="ease-out-bounce" class="btn btn-submit" type="button"
+									id="button">Pošalji</button>
+								<button data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+									data-sal-easing="ease-out-bounce" class="btn btn-cancel"
+									type="reset">Poništi</button>
+								<button class="btn btn-submit" type="button" id="button">Pošalji</button>
+								<button class="btn btn-cancel" type="reset">Poništi</button>
 
-	        </div>
-	      </form>
-
-
-	<!-- Anesova Forma -->
+							</div>
+						</form>
 
 
-
+						<!-- Anesova Forma -->
 
 
 
@@ -185,44 +184,13 @@
 
 
 
-	       </div>
-	    </div>
-	  </div>
-	</div>
 
 
 
-
-
-
-
-	<div class="container">
-		<div class="row mi" id="Onama" >
-			<div class="col-md-6 col-12 miMext">
-
-				<h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Ko smo mi?</h1>
-				<p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">AB3D Labs je švicarska kompanija sa predstavništvom u Bosni i Hercegovini. Kreirali smo inovativan 3D design softver za učenje 3D dizajna i 3D printanja kao i STEM baziran 3D kurikulum koji je prilagođen za učenike osnovnoškolskog i srednjoškolskog uzrasta</p>
-				<br><br><a data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" href="">PGLEDAJTE VIDEO</a>
-
-			</div>
-
-	<video data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce"  width="520" height="260" controls>
-	  <source src="video/video.mp4" type="video/mp4">
-	  Your browser does not support the video tag.
-	</video>
-
-		</div>
-	</div>
-	<div class="container">
-		<div class="row sta0" id="StaNudimo">
-			<div class="col-12 sta">
-				<h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Šta nudimo?</h1>
-			</div>
-			<div class="col-12 sta1">
-				<p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">AB3D Labs nudi kompletan edukativni set za <br>učenje i podučavanje 3D printanja i 3D dizajna</p>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 
 
 
@@ -230,44 +198,110 @@
 
 
 
+		<div class="container">
+			<div class="row mi" id="Onama">
+				<div class="col-md-6 col-12 miMext">
 
-	<div class="container">
-		<div class="row sta2" >
-			<div class="col-md-4 col-12">
-				<figure>
-					<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" src="img/softver.png" alt="Softver">
-				<figcaption><h3 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Softver</h3><p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Naš softver sadrži vrlo jednostavan interfejs, lagan za naučiti, prilagođen čak i za djecu predškolskog uzrasta</p></figcaption>
-				</figure>
-			</div>
-			<div class="col-md-4 col-12">
-				<figure>
-					<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" src="img/kit-box.png" alt="Educational Kit Box" style="width: 90%;border-radius: 5%;">
-					<figcaption><h3 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Educational Kit Box</h3><p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Kompletan toolkit sa materijalima za učenje korak po korak (skripte, vježbe, infografika, prezentacije, štapići za modeliranje)</p></figcaption>
-				</figure>
-			</div>
-			<div class="col-md-4 col-12">
-				<figure>
-					<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" src="img/3d-Printer.png" alt="3D Printer">
-					<figcaption><h3 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">3D Printer</h3><p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Mašina koja našu dizajniranu ideju pretvara u stvaran i opipljiv objekat.</p></figcaption>
-				</figure>
+					<h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+						data-sal-easing="ease-out-bounce">Ko smo mi?</h1>
+					<p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+						data-sal-easing="ease-out-bounce">AB3D Labs je švicarska kompanija sa predstavništvom u Bosni i
+						Hercegovini. Kreirali smo inovativan 3D design softver za učenje 3D dizajna i 3D printanja kao i
+						STEM baziran 3D kurikulum koji je prilagođen za učenike osnovnoškolskog i srednjoškolskog
+						uzrasta</p>
+					<br><br><a data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+						data-sal-easing="ease-out-bounce" href="">PGLEDAJTE VIDEO</a>
+
+				</div>
+
+				<video data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+					data-sal-easing="ease-out-bounce" width="520" height="260" controls>
+					<source src="video/video.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+
 			</div>
 		</div>
-	</div>
+		<div class="container">
+			<div class="row sta0" id="StaNudimo">
+				<div class="col-12 sta">
+					<h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+						data-sal-easing="ease-out-bounce">Šta nudimo?</h1>
+				</div>
+				<div class="col-12 sta1">
+					<p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+						data-sal-easing="ease-out-bounce">AB3D Labs nudi kompletan edukativni set za <br>učenje i
+						podučavanje 3D printanja i 3D dizajna</p>
+				</div>
+			</div>
+		</div>
 
 
 
 
 
 
-<!-- Proba slideshowa by Soki -->
-<!-- ov o dole otkomentarisati i slideshow ce raditi-->
+
+
+		<div class="container">
+			<div class="row sta2">
+				<div class="col-md-4 col-12">
+					<figure>
+						<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+							data-sal-easing="ease-out-bounce" src="img/softver.png" alt="Softver">
+						<figcaption>
+							<h3 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">Softver</h3>
+							<p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">Naš softver sadrži vrlo jednostavan interfejs, lagan
+								za naučiti, prilagođen čak i za djecu predškolskog uzrasta</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-4 col-12">
+					<figure>
+						<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+							data-sal-easing="ease-out-bounce" src="img/kit-box.png" alt="Educational Kit Box"
+							style="width: 90%;border-radius: 5%;">
+						<figcaption>
+							<h3 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">Educational Kit Box</h3>
+							<p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">Kompletan toolkit sa materijalima za učenje korak po
+								korak (skripte, vježbe, infografika, prezentacije, štapići za modeliranje)</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-4 col-12">
+					<figure>
+						<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+							data-sal-easing="ease-out-bounce" src="img/3d-Printer.png" alt="3D Printer">
+						<figcaption>
+							<h3 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">3D Printer</h3>
+							<p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">Mašina koja našu dizajniranu ideju pretvara u stvaran
+								i opipljiv objekat.</p>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
 
 
 
 
 
 
-<!--
+		<!-- Proba slideshowa by Soki -->
+		<!-- ov o dole otkomentarisati i slideshow ce raditi-->
+
+
+
+
+
+
+		<!--
 
 
 <div class="container" style="z-index: -2 !important">
@@ -427,13 +461,13 @@
 
 
 
-<!--
+		<!--
 
 
 		<div class="col-12 col-xl-4">
 			<div id="anesov_text1">
 				<!-- <h1 id="res_textt">Rad sa nekretninama...</h1> -->
-				<!--
+		<!--
 				<figcaption><h3 data-sal-duration="1800" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Softver</h3></figcaption>
 				<p data-sal-duration="1800" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" id="res_text">Naš softver sadrži vrlo jednostavan interfejs, lagan za naučiti, prilagođen čak i za djecu predškolskog uzrasta</p>
 
@@ -448,7 +482,7 @@
 			<div id="anesov_text2">
 				<!-- <h1 id="res_textt">Rad sa nekretninama...</h1> -->
 
-<!--
+		<!--
 
 				<figcaption><h3 data-sal-duration="1800" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Educational Kit Box</h3></figcaption>
 				<p data-sal-duration="1800" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" id="res_text">Kompletan toolkit sa materijalima za učenje korak po korak (skripte, vježbe, infografika, prezentacije, štapići za modeliranje)</p>
@@ -466,7 +500,7 @@
 			<div id="anesov_text3">
 				<!-- <h1 id="res_textt">Rad sa nekretninama...</h1> -->
 
-				<!--
+		<!--
 				<figcaption><h3 data-sal-duration="1800" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">3D Printer</h3></figcaption>
 				<p data-sal-duration="1800" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" id="res_text">Mašina koja našu dizajniranu ideju pretvara u stvaran i opipljiv objekat.</p>
 
@@ -487,7 +521,7 @@
 
 -->
 
-<!--Proba slideshowa by soki -->
+		<!--Proba slideshowa by soki -->
 
 
 
@@ -516,175 +550,205 @@
 
 
 
-	<div class="container">
-		<div class="row sta00">
-			<div class="col-12 sta3">
-				<h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Benefiti 3D kursa</h1>
-			</div>
-			<div class="col-12 sta1">
-				<p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">Implementacija 3D design kurs modula i obrazovni proces doprinosite  <br> kvaliteti obrazovanja i imidž vaše edukacijske ustanove	</p>
-			</div>
-		</div>
-	</div>
-	<div class="container" id="vjezba">
-		<div class="row kar0">
-<<<<<<< HEAD
-			<div class="col-md-7 col-12 karT" id="vjezba2">
-=======
-			<div class="col-md-7 col-12 karT">
->>>>>>> parent of 485843f... Revert "Skroling effect"
-				<h4 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">1. Uticaj na učenje i karijeru</h4>
-				<ul style=" list-style-type:none">
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Povećanje učenikove angažiranosti</li>
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Jačanje prostorne inteligencije</li>
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Poboljšanje rezultata učenja</li>
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Otvaranje rane buduće karijere</li>
-				</ul>
-			</div>
-<<<<<<< HEAD
-			<div class="col-md-5 col-12 karV1" id="vjezba3">
-=======
-			<div class="col-md-5 col-12 karV1">
->>>>>>> parent of 485843f... Revert "Skroling effect"
-				<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" src="img/ucenik.png" alt="Ucenik">
+		<div class="container">
+			<div class="row sta00">
+				<div class="col-12 sta3">
+					<h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+						data-sal-easing="ease-out-bounce">Benefiti 3D kursa</h1>
+				</div>
+				<div class="col-12 sta1">
+					<p data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+						data-sal-easing="ease-out-bounce">Implementacija 3D design kurs modula i obrazovni proces
+						doprinosite <br> kvaliteti obrazovanja i imidž vaše edukacijske ustanove </p>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<div class="row kar1">
+		<div class="container" id="vjezba">
+			<div class="row kar0">
+				<div class="col-md-7 col-12 karT" id="vjezba2">
+					<div class="col-md-7 col-12 karT">
+						<h4 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+							data-sal-easing="ease-out-bounce">1. Uticaj na učenje i karijeru</h4>
+						<ul style=" list-style-type:none">
+							<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">- Povećanje učenikove angažiranosti</li>
+							<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">- Jačanje prostorne inteligencije</li>
+							<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">- Poboljšanje rezultata učenja</li>
+							<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">- Otvaranje rane buduće karijere</li>
+						</ul>
+					</div>
+					<div class="col-md-5 col-12 karV1" id="vjezba3">
+						<div class="col-md-5 col-12 karV1">
+							<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce" src="img/ucenik.png" alt="Ucenik">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row kar1">
 
-			<div class="col-md-5 col-12 karV">
-				<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" src="img/uciteljica.png" alt="Uciteljica">
-			</div>
-			<div class="col-md-7 col-12 karT">
-				<h4 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">2. Uticaj na formiranje i rad nastavnika</h4>
-				<ul style=" list-style-type:none">
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Povećano korištenje tehnologije u nastavi</li>
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Upoznavanje nastavnika novim tehnologijama</li>
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Pružanje novih 3D resursa za nastavnike i nastavu</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row kar2">
-			<div class="col-md-6 col-12 karT1">
-				<h4 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">3. Uticaj na razvoj i ugled škole</h4>
-				<ul style=" list-style-type:none">
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Pružanje podrške STEM edukaciji</li>
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Oživljavanje laboratorija i prostora za inovacije</li>
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Povećanje učenikovih mogućnosti i IT znanja</li>
-				</ul>
-			</div>
-			<div class="col-md-6 col-12 karV2">
-				<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" src="img/skola.png" alt="skola">
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row kar3">
+						<div class="col-md-5 col-12 karV">
+							<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce" src="img/uciteljica.png" alt="Uciteljica">
+						</div>
+						<div class="col-md-7 col-12 karT">
+							<h4 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">2. Uticaj na formiranje i rad nastavnika</h4>
+							<ul style=" list-style-type:none">
+								<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+									data-sal-easing="ease-out-bounce">- Povećano korištenje tehnologije u nastavi</li>
+								<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+									data-sal-easing="ease-out-bounce">- Upoznavanje nastavnika novim tehnologijama</li>
+								<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+									data-sal-easing="ease-out-bounce">- Pružanje novih 3D resursa za nastavnike i
+									nastavu</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row kar2">
+						<div class="col-md-6 col-12 karT1">
+							<h4 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">3. Uticaj na razvoj i ugled škole</h4>
+							<ul style=" list-style-type:none">
+								<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+									data-sal-easing="ease-out-bounce">- Pružanje podrške STEM edukaciji</li>
+								<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+									data-sal-easing="ease-out-bounce">- Oživljavanje laboratorija i prostora za
+									inovacije</li>
+								<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+									data-sal-easing="ease-out-bounce">- Povećanje učenikovih mogućnosti i IT znanja</li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-12 karV2">
+							<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce" src="img/skola.png" alt="skola">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row kar3">
 
-			<div class="col-md-5 col-12 karV">
-				<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" src="img/obrazovni-sistem.png" alt="obrazovni sistem">
-			</div>
-			<div class="col-md-7 col-12 karT3">
-				<h4 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">4. Uticaj na obrazovni sistem u cjelini</h4>
-				<ul style=" list-style-type:none">
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Fokusiranje na razmišljanje, a ne samo na učenje</li>
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">- Izgradnja dokazne baze za iskustvo u 3D edukaciji</li>
-					<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce">-  Činjenje tehnologije jednako dostupne i    prilagodljive dječacima i djevojčicama </li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Footer by Soki -->
-
-<footer class="ct-footer">
-      <div class="container">
-        <div  name="contentForm" enctype="multipart/form-data" method="post" action="">
-          <div class="ct-footer-pre  ">
-            <div class="inner">
-<<<<<<< HEAD
-
-              <span data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce" class="row text-center">Nudimo unapređenje edukacijskog procesa u školama! </span>
-=======
-							<!--Kad sam ubacio css od forme, ovo se sjebalo -->
-              <span class="row text-center">Nudimo unapređenje edukacijskog procesa u školama! </span>
->>>>>>> parent of ae66124... Revert "Forma sa validacijom - dodati php dio, footer - boje prilagoditi kad dodje vrijeme"
-            </div>
-          </div>
-        </div>
+						<div class="col-md-5 col-12 karV">
+							<img data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce" src="img/obrazovni-sistem.png" alt="obrazovni sistem">
+						</div>
+						<div class="col-md-7 col-12 karT3">
+							<h4 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+								data-sal-easing="ease-out-bounce">4. Uticaj na obrazovni sistem u cjelini</h4>
+							<ul style=" list-style-type:none">
+								<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+									data-sal-easing="ease-out-bounce">- Fokusiranje na razmišljanje, a ne samo na učenje
+								</li>
+								<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+									data-sal-easing="ease-out-bounce">- Izgradnja dokazne baze za iskustvo u 3D
+									edukaciji</li>
+								<li data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+									data-sal-easing="ease-out-bounce">- Činjenje tehnologije jednako dostupne i
+									prilagodljive dječacima i djevojčicama </li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
 
 
 
 
 
-        <div class="ct-footer-meta text-center-sm">
-          <div class="row">
-            <div class="col-sm-12 col-12 col-md-2">
-              <img class="d-block mx-auto mx-md-0" alt="logo" src="img/logo.png" style="margin-top:-10px;" height="80" width="150">
-            </div>
-            <div class="col-sm-12 col-12 col-md-4">
-              <address>
-                <span  style="font-size: 20px;">AB3D Labs<br></span>Bulevar Meše Selimovića<br>
-                Sarajevo, BiH, 71000<br>
-                <span>Telefon: <a href="tel:+38762123321">+387 61 338 555</a></span>
-              </address>
-            </div>
-            <div class="col-sm-12-center col-md-2 ct-u-paddingTop10">
-              <a href="https://goo.gl/maps/38oc3DoVaW22" target="_blank"><img class="d-block mx-auto mx-md-0" alt="app store" src="img/maps.png" height="60" width="60"></a>
-            </div>
 
-            <div class="col-sm-6 col-md-4">
-              <ul class="ct-socials list-unstyled">
-                <div class="row">
-                <!--  <div class="col-md-4 col-3 mr-sm-3 mr-md-0 offset-1 offset-sm-0">-->
-								<div class="col-md-6 col-6 center ">
 
-                    <li class="list-inline-item ">
 
-                      <a href="https://www.facebook.com/ab3dskola/" target="_blank"><img   alt="facebook" src="https://www.solodev.com/assets/footer/facebook-white.png"></a>
 
-                    </li>
-                  </div>
-                  <!--<div class="col-md-4 col-3 mr-sm-3 mr-md-0 ">
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Footer by Soki -->
+
+				<footer class="ct-footer">
+					<div class="container">
+						<div name="contentForm" enctype="multipart/form-data" method="post" action="">
+							<div class="ct-footer-pre  ">
+								<div class="inner">
+
+									<span data-sal-duration="1200" data-sal="slide-up" data-sal-delay="300"
+										data-sal-easing="ease-out-bounce" class="row text-center">Nudimo unapređenje
+										edukacijskog procesa u školama! </span>
+									<!--Kad sam ubacio css od forme, ovo se sjebalo -->
+									<span class="row text-center">Nudimo unapređenje edukacijskog procesa u školama!
+									</span>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+						<div class="ct-footer-meta text-center-sm">
+							<div class="row">
+								<div class="col-sm-12 col-12 col-md-2">
+									<img class="d-block mx-auto mx-md-0" alt="logo" src="img/logo.png"
+										style="margin-top:-10px;" height="80" width="150">
+								</div>
+								<div class="col-sm-12 col-12 col-md-4">
+									<address>
+										<span style="font-size: 20px;">AB3D Labs<br></span>Bulevar Meše Selimovića<br>
+										Sarajevo, BiH, 71000<br>
+										<span>Telefon: <a href="tel:+38762123321">+387 61 338 555</a></span>
+									</address>
+								</div>
+								<div class="col-sm-12-center col-md-2 ct-u-paddingTop10">
+									<a href="https://goo.gl/maps/38oc3DoVaW22" target="_blank"><img
+											class="d-block mx-auto mx-md-0" alt="app store" src="img/maps.png"
+											height="60" width="60"></a>
+								</div>
+
+								<div class="col-sm-6 col-md-4">
+									<ul class="ct-socials list-unstyled">
+										<div class="row">
+											<!--  <div class="col-md-4 col-3 mr-sm-3 mr-md-0 offset-1 offset-sm-0">-->
+											<div class="col-md-6 col-6 center ">
+
+												<li class="list-inline-item ">
+
+													<a href="https://www.facebook.com/ab3dskola/" target="_blank"><img
+															alt="facebook"
+															src="https://www.solodev.com/assets/footer/facebook-white.png"></a>
+
+												</li>
+											</div>
+											<!--<div class="col-md-4 col-3 mr-sm-3 mr-md-0 ">
                     <li class="list-inline-item">
                       <a href="https://www.facebook.com/" target="_blank"><img alt="linkedin" id="linkedinImg" src="images/linkedin-white.png" style="margin-top: -5px;" width=52 height=52></a>
                     </li>
                   </div>
 								-->
-                  <div class="col-md-6 col-6  ">
-                    <li class="list-inline-item">
+											<div class="col-md-6 col-6  ">
+												<li class="list-inline-item">
 
-                      <a href="https://www.instagram.com/ab3d_akademija/?hl=en" target="_blank"><img  alt="instagram" src="https://www.solodev.com/assets/footer/instagram-white.png"></a>
+													<a href="https://www.instagram.com/ab3d_akademija/?hl=en"
+														target="_blank"><img alt="instagram"
+															src="https://www.solodev.com/assets/footer/instagram-white.png"></a>
 
-                    </li>
-                  </div>
+												</li>
+											</div>
 
-                </div>
-                <!--
+										</div>
+										<!--
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/" target="_blank"><img alt="facebook" src="https://www.solodev.com/assets/footer/facebook-white.png"></a>
                 </li>
@@ -700,37 +764,26 @@
                 <li class="list-inline-item">
                   <a href="https://www.pinterest.com/" target="_blank"><img alt="pinterest" src="https://www.solodev.com/assets/footer/pinterest-white.png"></a>
                 </li>-->
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ct-footer-post">
-        <div class="container">
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ct-footer-post">
+						<div class="container">
 
-          <div class="row justify-content-center">
-            <p>Copyright © 2019 AB3D Labs.&nbsp;<a href="#">Privacy Policy</a></p>
+							<div class="row justify-content-center">
+								<p>Copyright © 2019 AB3D Labs.&nbsp;<a href="#">Privacy Policy</a></p>
 
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-
-
-<<<<<<< HEAD
-=======
+							</div>
+						</div>
+					</div>
+				</footer>
 
 
 
 
-
-
-
-
->>>>>>> parent of ae66124... Revert "Forma sa validacijom - dodati php dio, footer - boje prilagoditi kad dodje vrijeme"
-<!-- Footer by Soki -->
+				<!-- Footer by Soki -->
 
 
 
@@ -739,11 +792,10 @@
 
 
 
-<<<<<<< HEAD
-<script src="./node_modules/sal.js/dist/sal.js"></script>
+				<script src="./node_modules/sal.js/dist/sal.js"></script>
 
-    <script type="module">
-        import jump from './node_modules/jump.js/dist/jump.module.js';
+				<script type="module">
+					import jump from './node_modules/jump.js/dist/jump.module.js';
 
      sal({
         once: false,
@@ -751,39 +803,22 @@
 
 
     </script>
-=======
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> parent of ae66124... Revert "Forma sa validacijom - dodati php dio, footer - boje prilagoditi kad dodje vrijeme"
-
-
-
-
-
-
-
-<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script type="application/javascript" src="js/scrolling.js"></script>
- <script src="./js/validacija.js"></script>
+				<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+					integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+					integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+					crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+					integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+					crossorigin="anonymous"></script>
+				<script type="application/javascript" src="js/scrolling.js"></script>
+				<script src="./js/validacija.js"></script>
 
 </body>
+
 </html>
