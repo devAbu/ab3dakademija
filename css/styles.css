@@ -664,7 +664,7 @@ a {
 	/* padding-bottom: 50px ;*/
 	/*padding-top: 50px;*/
 	/*margin-left: -25px;*/
-	width: 100%;
+	width: 100% !important;
 
 }
 
@@ -1467,14 +1467,6 @@ a {
 	text-decoration: underline;
 }
 
-.ct-footer-post {
-	background: #000;
-	padding-bottom: 50px;
-	padding-top: 50px;
-	margin-left: -25px;
-	width: 103.3%;
-
-}
 
 .ct-footer-post .inner-left,
 .ct-footer-post .inner-right {
