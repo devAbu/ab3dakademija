@@ -190,7 +190,9 @@ nav ul li a:hover {
 
 }
 
-@media only screen and (min-width: 480px) video {
+@media only screen and (min-width: 480px) {}
+
+video {
 	padding-left: 100px;
 	padding: 0;
 	margin: 0;
@@ -224,7 +226,8 @@ button.vazno {
 	text-align: center;
 	color: white;
 	border: none;
-	padding: 6px 20px font-size: large;
+	padding: 6px 20px;
+	font-size: large;
 	font-weight: bold;
 	cursor: pointer;
 
@@ -238,7 +241,8 @@ button.vazno2 {
 	text-align: center;
 	color: white;
 	border: none;
-	padding: 6px 20px font-size: large;
+	padding: 6px 20px;
+	font-size: large;
 	font-weight: bold;
 	cursor: pointer;
 
@@ -738,8 +742,7 @@ address a:hover {
 }
 
 .btn.btn-motive {
-	background-color: ##032d40;
-	;
+	background-color: #032d40;
 	-webkit-transition: all .25s ease;
 	transition: all .25s ease;
 }
@@ -1547,8 +1550,7 @@ address a:hover {
 }
 
 .btn.btn-motive {
-	background-color: ##032d40;
-	;
+	background-color: #032d40;
 	-webkit-transition: all .25s ease;
 	transition: all .25s ease;
 }
@@ -2069,7 +2071,7 @@ label {
 	font-size: 20px;
 	line-height: 30px;
 	text-align: justify;
-	=======width: 320px;
+	width: 320px;
 }
 
 input[type="password"] {
