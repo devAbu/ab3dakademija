@@ -217,6 +217,7 @@ color: #cbcbb3;
 		 width:100px;
       height:auto;
 
+
 }
 #inst{
 	width:100px;
@@ -226,9 +227,12 @@ color: #cbcbb3;
 }
 #novo{
 	padding-bottom: 30px;
-	padding-left: 30px;
+	padding-left: 15px;
 	display: inline-block;
 
+}
+#sranje{
+	padding-bottom: -30px;
 }
 
  }
